@@ -1,0 +1,46 @@
+#root {
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 20px;
+}
+
+select,
+input,
+button {
+    font: inherit;
+    margin: 8px;
+    padding: 9px 12px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 12px;
+    margin: 18px 0;
+}
+
+.option {
+    text-align: left;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    display: grid;
+    gap: 8px;
+}
+
+.option.selected {
+    border: 2px solid #2563eb;
+}
+
+.option span {
+    font-size: .9rem;
+}
+
+.error {
+    color: #b91c1c;
+}
